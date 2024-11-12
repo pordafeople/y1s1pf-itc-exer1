@@ -7,7 +7,10 @@
 </head>
 
 <body>
-    <h1>TODO</h1>
+    <h1>Error.</h1>
+    <a href="../register.html">
+        <p>return to registration page</p>
+    </a>
 </body>
 
 </html>
