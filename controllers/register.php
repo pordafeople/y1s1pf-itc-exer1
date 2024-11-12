@@ -1,6 +1,5 @@
+<?php require($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
 <?php
-require('../framework.php');
-
 $keys = array(
     'custname',
     'address',

@@ -8,7 +8,7 @@
 
 <body>
     <h1>Error.</h1>
-    <a href="../register.html">
+    <a href="/views/register.php">
         <p>return to registration page</p>
     </a>
 </body>

@@ -1,7 +1,5 @@
-<?php
-require('../framework.php');
-$entries = csv_read('customers');
-?>
+<?php require($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
+<?php $entries = csv_read('customers'); ?>
 
 <table>
     <?php if ($entries): ?>
