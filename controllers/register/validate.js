@@ -17,6 +17,8 @@ function validateWith(requirements) {
 }
 
 function validate() {
+    // TEMP:
+    return true;
     const err = validateWith({
         custname: [{
             regex: /[A-Z][a-z]*, ([A-Z][a-z]* )+[A-Z]\./,

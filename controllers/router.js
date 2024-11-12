@@ -1,0 +1,1 @@
+window.location.href = `/views${window.location.pathname}.php`;

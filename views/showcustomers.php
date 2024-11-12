@@ -1,4 +1,4 @@
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
 <?php $entries = csv_read('customers'); ?>
 
 <table>
@@ -6,7 +6,7 @@
         <?php foreach ($entries as $data) : ?>
             <tr>
                 <?php foreach ($data as $cell) : ?>
-                    <td><?= $cell ?></td>
+                    <td><?= htmlspecialchars($cell) ?></td>
                 <?php endforeach; ?>
             </tr>
         <?php endforeach; ?>
