@@ -14,3 +14,9 @@
         <h1>[No data.]</h1>
     <?php endif; ?>
 </table>
+
+<p>
+    <a href="/views/index.php">
+        <p>HOME PAGE</p>
+    </a>
+</p>
