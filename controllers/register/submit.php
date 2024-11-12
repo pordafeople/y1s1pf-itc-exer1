@@ -1,14 +1,14 @@
 <?php require($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
 <?php
-$keys = array(
+$keys = [
     'custname',
     'address',
     'number',
     'email',
     'password',
-);
+];
 
-$data = array();
+$data = [];
 foreach ($keys as $key) {
     $data[] = $_POST[$key];
 }

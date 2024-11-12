@@ -7,7 +7,7 @@ function csv_path($table)
 function csv_read($table)
 {
     $file = csv_path($table);
-    $entries = array();
+    $entries = [];
 
     $fileHandle = fopen($file, 'r');
     if ($fileHandle !== false) {
