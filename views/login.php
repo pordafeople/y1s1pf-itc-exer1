@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <form name="register" action="/controllers/register/submit.php" onsubmit="return validate()" method="post">
+    <form name="login" action="/controllers/login_customer.php" onsubmit="return validate()" method="post">
         <label for="custname">Name: </label>
         <input type="text" name="custname" id="custname" placeholder="[Lastname, Firstname M.I.]" />
         <br />
@@ -39,7 +39,7 @@
 
         <input type="submit" name="customer" id="submit" value="Register" />
     </form>
-    <script src="/controllers/register/validate.js"></script>
+    <script src="/controllers/login_validate.js"></script>
 </body>
 
 </html>

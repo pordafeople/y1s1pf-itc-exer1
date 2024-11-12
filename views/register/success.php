@@ -11,6 +11,9 @@
     <a href="/views/register.php">
         <p>return to registration page</p>
     </a>
+    <a href="/views/showcustomers.php">
+        <p>Go to Registered Accounts</p>
+    </a>
 </body>
 
 </html>
