@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<?php require($_SERVER['DOCUMENT_ROOT'] . '/init.php'); ?>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <form action="post">
-    </form>
+    <title>Register</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +12,7 @@
 </head>
 
 <body>
-    <form action="register.php" method="get">
+    <form name="register" action="/controllers/register_customer.php" onsubmit="return validate()" method="post">
         <label for="custname">Name: </label>
         <input type="text" name="custname" id="custname" placeholder="[Lastname, Firstname M.I.]" />
         <br />
@@ -39,10 +37,9 @@
         <input type="password" name="confirmpassword" id="confirmpassword" placeholder="[re-type password]" />
         <br />
 
-        <input type="submit" name="customer" id="submit" value="Register" onclick="validate()" />
-
-        <script src="register.js"></script>
+        <input type="submit" name="customer" id="submit" value="Register" />
     </form>
+    <script src="/controllers/register_validate.js"></script>
 </body>
 
 </html>

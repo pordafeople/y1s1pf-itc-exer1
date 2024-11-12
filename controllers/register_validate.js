@@ -1,7 +1,7 @@
 function validateWith(requirements) {
     let err = '';
     for (const [field, sub_requirements] of Object.entries(requirements)) {
-        let sub_err = ''
+        let sub_err = '';
         const value = document.getElementById(field).value;
         for (const { regex, error } of sub_requirements) {
             const isValid = regex.test(value);
@@ -18,10 +18,12 @@ function validateWith(requirements) {
 
 function validate() {
     const err = validateWith({
-        name: [{
+        custname: [{
             regex: /[A-Z][a-z]*, ([A-Z][a-z]* )+[A-Z]\./,
             error: "Must follow the format Lastname, Firstname M.",
         }],
+        // address
+        // number
         email: [{
             regex: /[\w\.]+@\w+(?:\.\w+)+/,
             error: "Must be a valid email like name@example.com",
@@ -44,10 +46,13 @@ function validate() {
                 error: "Must be at least 8 characters",
             }
         ],
+        // confirmpassword
     });
-    if (err === '') {
+    const success = err === '';
+    if (success) {
         alert('Registered.');
     } else {
         alert('Failed to register:\n\n' + err);
     }
+    return success;
 }
